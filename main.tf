@@ -19,6 +19,10 @@ resource "aws_instance" "web" {
   instance_type = "t3.nano"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "LearningTerraform"
+    Instance_Type = "Internal"
+    Owner = "Cloud Services"
+    Customer = "ElixirCorp"
+    
   }
 }
