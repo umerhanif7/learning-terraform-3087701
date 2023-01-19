@@ -25,6 +25,8 @@ resource "aws_instance" "blog" {
 
   tags = {
     Name = "Learning Terraform"
+    Customer = "Elixir Cloud"
+    Owner = "Elixir Cloud"
   }
 }
 
@@ -32,6 +34,8 @@ resource "aws_security_group" "blog" {
   name = "blog"
   tags = {
     Terraform = "true"
+    Customer = "Elixir Cloud"
+    Owner = "Elixir Cloud"
   }
   vpc_id = data.aws_vpc.default.id
 }
