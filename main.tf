@@ -28,6 +28,8 @@ module "blog_vpc" {
   tags = {
     Terraform = "true"
     Environment = "dev"
+    Owner = "Elixir Cloud"
+    Customer = "Elixir Cloud"
   }
 }
 
@@ -39,6 +41,8 @@ resource "aws_instance" "blog" {
 
   tags = {
     Name = "Learning Terraform"
+    Owner = "Elixir Cloud"
+    Customer = "Elixir Cloud"
   }
 }
 
